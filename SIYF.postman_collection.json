@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "3d789ed3-d323-4a14-8a29-82a8dd64a9ae",
+		"name": "SIYF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29804236"
+	},
+	"item": [
+		{
+			"name": "HeaderNews List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/uz/header/news/list/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"uz",
+						"header",
+						"news",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Not required\",\n    \"email\" : \"Required@gmail.com\",\n    \"phone\" : \"+998_not_required_and_not_validating_sting\",\n    \"feedback\" : \"Required feedback content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/feedback/create/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"feedback",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/uz/employee/list/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"uz",
+						"employee",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sponsor List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/uz/employee/list/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"uz",
+						"employee",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sponsor List Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/uz/employee/list/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"uz",
+						"employee",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "127.0.0l1:8000"
+		}
+	]
+}
