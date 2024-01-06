@@ -165,7 +165,8 @@
 	"variable": [
 		{
 			"key": "base_url",
-			"value": "127.0.0l1:8000"
+			"value": "127.0.0l1:8000",
+			"disabled": true
 		},
 		{
 			"key": "base_url",
