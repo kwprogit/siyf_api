@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3d789ed3-d323-4a14-8a29-82a8dd64a9ae",
+		"_postman_id": "98dfc41f-db09-4d41-bae9-f6a0cf9a5930",
 		"name": "SIYF",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "29804236"
@@ -29,7 +29,7 @@
 			"response": []
 		},
 		{
-			"name": "News List",
+			"name": "Feedback List",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -100,7 +100,7 @@
 			"response": []
 		},
 		{
-			"name": "Sponsor List Copy",
+			"name": "Employee List",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -113,6 +113,27 @@
 						"api",
 						"uz",
 						"employee",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/uz/news/list/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"uz",
+						"news",
 						"list",
 						""
 					]
@@ -145,6 +166,11 @@
 		{
 			"key": "base_url",
 			"value": "127.0.0l1:8000"
+		},
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
