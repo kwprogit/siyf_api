@@ -140,6 +140,27 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "News Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/uz/news/1/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"uz",
+						"news",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -165,13 +186,13 @@
 	"variable": [
 		{
 			"key": "base_url",
-			"value": "127.0.0l1:8000",
-			"disabled": true
+			"value": "127.0.0l1:8000"
 		},
 		{
 			"key": "base_url",
 			"value": "",
-			"type": "string"
+			"type": "string",
+			"disabled": true
 		}
 	]
 }

@@ -35,7 +35,16 @@ class NewsList(APIView):
             status=status.HTTP_200_OK
         )
     
-
+class NewsDetail(APIView):
+    def get(self, request, lang , id):
+        try: 
+            news = News.objects.get(id=id, lang_code=lang)
+            return Response(NewsSerializer(news).data, 200)
+        except News.DoesNotExist:
+            return Response({
+                "message" : f"News with id {id} not exists"
+            }, status=status.HTTP_404_NOT_FOUND)
+        
 class EmployeeList(APIView):
     def get(self, request, lang):
         qset = Employee.objects.filter(lang_code=lang)

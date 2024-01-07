@@ -4,9 +4,11 @@ from rest_framework import status
 from .views import (
         HeaderNewsList, 
         NewsList, 
+        NewsDetail, 
         EmployeeList, 
         SponsorList, 
         CreateFeedbackView, 
+
     )
 from .accounting_controllers import AdminViewSet
 urlpatterns = [
@@ -14,9 +16,10 @@ urlpatterns = [
     # path('headernews/create/', HeaderNewsList.as_view()), 
     path('<str:lang>/header/news/list/', HeaderNewsList.as_view()),
     path('<str:lang>/news/list/',NewsList.as_view()), 
+    path('<str:lang>/news/<int:id>/', NewsDetail.as_view()), 
     path('<str:lang>/employee/list/' , EmployeeList.as_view()), 
     path('sponsor/list/', SponsorList.as_view()), 
-    path('feedback/create/', CreateFeedbackView.as_view())
+    path('feedback/create/', CreateFeedbackView.as_view()),
 ]
 
 def handler404(*args, **kwargs):
